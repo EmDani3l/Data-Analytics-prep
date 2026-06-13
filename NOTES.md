@@ -1,7 +1,7 @@
-### Series
+# Series
 Series: a single column of data
 
-### DataFrame
+# DataFrame
 DataFrame: a table
 
 students = pd.DataFrame({
@@ -12,27 +12,27 @@ students = pd.DataFrame({
 
 ## Common Operations
 
-# View first rows
+### View first rows
 students.head()
 
-# Information about data
+### Information about data
 students.info()
 
-# Summary Statistics
+### Summary Statistics
 students.describe()
 
-# Get one column
+### Get one column
 students["Score"]
 
-# Average Score
+### Average Score
 students["Score"].mean()
 
-# Highest score
+### Highest score
 students["Score"].max()
 
-# Lowest Score
+### Lowest Score
 students["Score"].min()
 
 ## Filtering
-# Students scoring above 80
+### Students scoring above 80
 students[students["Score"] > 80]
