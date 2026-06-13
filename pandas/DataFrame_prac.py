@@ -19,12 +19,14 @@ print("\n Average rating is \n", movies["Rating"].mean())
 
 print("\nMovie with highest rating is \n", movies[movies["Rating"] == movies["Rating"].max()]["Title"])
 
-# 3.Which movies were released after 2015?
-
-print("\n Movies released after 2015 are \n", movies[movies["Year"] > 2015]["Title"].tolist())
 # Alternate way:
 movies.loc[movies["Rating"].idxmax()]
 print("\n Movies released after 2015 are \n", movies.loc[movies["Rating"].idxmax(), "Title"])
+
+# 3.Which movies were released after 2015?
+
+print("\n Movies released after 2015 are \n", movies[movies["Year"] > 2015]["Title"].tolist())
+
 
 # 4.Which movies have rating above 8.7?
 
