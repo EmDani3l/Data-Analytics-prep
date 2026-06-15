@@ -67,3 +67,11 @@ students[students["Score"] > 80]
 
 ### df["Sex"].value_counts()
 --> shows count of each entry in specified column
+
+# Sorting
+
+### ascending=False
+--> descending order
+
+### ascending=True
+--> ascending order
