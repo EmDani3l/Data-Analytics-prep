@@ -75,3 +75,30 @@ students[students["Score"] > 80]
 
 ### ascending=True
 --> ascending order
+
+# Filtering
+
+For conditions, use '&' as AND, not '&&'
+
+## Chaining operations together
+### df.sort_values("Fare", ascending = False)["Name"].head(5)
+--> Read from left to right
+    1. Sort by fare
+    2. Select Name column
+    3. Show first 5
+
+## Understanding idxmax()
+Suppose:
+counts = df["Pclass"].value_counts()
+gives:
+3    491
+1    216
+2    184
+
+counts.max()
+gives:
+491
+
+counts.idxmax()
+gives:
+3
