@@ -16,3 +16,5 @@ I don't really know what I am doing or how much I actually will need to know to 
 - Statistics to read trends and answer questions regarding multiple variables
 - Data cleaning, data imputation
 - Basic text analysis using .lower, .contains, .sum, etc
+- Finding frequencies of words using iterations, dict, list, sort
+- Returning attributes of an item tuple
