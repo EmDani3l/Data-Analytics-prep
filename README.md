@@ -15,3 +15,4 @@ I don't really know what I am doing or how much I actually will need to know to 
 - EDA to answer simple observation questions
 - Statistics to read trends and answer questions regarding multiple variables
 - Data cleaning, data imputation
+- Basic text analysis using .lower, .contains, .sum, etc
