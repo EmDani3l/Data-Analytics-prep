@@ -197,3 +197,16 @@ Lose some data
 # Drop missing rows
 + No invented values
 - Less data
+
+# Text Analysis
+## Finding number of instances containing a keyword
+### feedback["Comment"].str.lower().str.contains("keyword").sum()
+Take comments
+↓
+Convert to lowercase
+↓
+Check whether keyword exists
+↓
+Get True/False values
+↓
+Count the True values
