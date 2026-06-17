@@ -102,3 +102,57 @@ gives:
 counts.idxmax()
 gives:
 3
+
+# loc & iloc
+loc → uses labels (row/column names)
+iloc → uses integer positions (0-based indexes)
+
+### loc (label-based)
+import pandas as pd
+
+df = pd.DataFrame(
+    {"name": ["Alice", "Bob"], "age": [25, 30]},
+    index=["a", "b"]
+)
+
+print(df.loc["a"])
+
+Output:
+name    Alice
+age        25
+
+Select a specific value:
+df.loc["a", "age"]  ----> 25
+
+### iloc (position-based)
+df.iloc[row_position, column_position]
+df.iloc[0]
+
+Output:
+name    Alice
+age        25
+
+Select a specific value:
+df.iloc[0, 1] ------> 25
+
+## Slicing difference
+
+### df.iloc[0:2]
+Returns rows 0 and 1, excluding 2.
+
+### df.loc["a":"b"]
+Returns rows "a" through "b".
+The end label is included.
+
+| Feature             | `loc`              | `iloc`            |
+| ------------------- | ------------------ | ----------------- |
+| Indexing type       | Labels             | Integer positions |
+| Row selection       | `df.loc["a"]`      | `df.iloc[0]`      |
+| Column selection    | `df.loc[:, "age"]` | `df.iloc[:, 1]`   |
+| Slice end included? | Yes                | No                |
+| Boolean filtering   | Commonly used      | Less common       |
+
+A useful memory trick:
+
+loc = locate by label
+iloc = integer location
