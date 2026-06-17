@@ -210,3 +210,67 @@ Check whether keyword exists
 Get True/False values
 ↓
 Count the True values
+
+## Which word appears the most?
+### max(word_counts, key=word_counts.get)
+For every key, what is its value?
+
+## NLP style processing
+Raw comments
+↓
+Lowercase
+↓
+Tokenize (split into words)
+↓
+Remove stop words
+↓
+Count frequencies
+↓
+Extract meaningful patterns
+
+This exact pipeline is still used today before more advanced techniques like TF-IDF, embeddings, and transformers.
+
+## Ways to return parts of a dict
+
+filtered_words_counts = {
+    "service": 2,
+    "excellent": 2,
+    "app": 2,
+    "customer": 2,
+    "crashes": 1
+}
+### filtered_words_counts.keys()
+returns the keys
+
+### filtered_words_counts.values()
+returns the values
+
+### filtered_words_counts.items()
+returns BOTH together (tuple)
+
+## lambda function
+sorted_words = sorted(
+    filtered_words_counts.items(),
+    key=lambda x: x[1],
+    reverse=True
+)
+### key=lambda x: x[1] 
+So the lambda is effectively saying:
+"Sort these tuples according to the second element."
+
+### Is the SAME as:
+def get_count(x):
+    return x[1]
+
+sorted(
+    filtered_words_counts.items(),
+    key=get_count
+)
+
+# N-grams
+
+## Unigrams
+One word at a time
+
+## Bigrams
+Two words together
