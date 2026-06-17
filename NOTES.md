@@ -156,3 +156,16 @@ A useful memory trick:
 
 loc = locate by label
 iloc = integer location
+
+# Visualisation
+## Correlation
+Interpretation:
+
++1
+Strong positive relationship
+
+0
+No relationship
+
+-1
+Strong negative relationship
