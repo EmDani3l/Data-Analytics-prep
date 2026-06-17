@@ -169,3 +169,31 @@ No relationship
 
 -1
 Strong negative relationship
+
+# Data Cleaning
+## Mean Imputation
+### df["Age"] = df["Age"].fillna(df["Age"].mean()) --> Could use median instead if there are major outliers
+Pros:
+Keeps all rows
+Easy
+
+Cons:
+Everyone missing becomes the same age
+Reduces variance
+Can distort relationships
+
+## Dropping Rows
+### df = df.dropna(subset=["Age"])
+Pros:
+No fake data
+
+Cons:
+Lose some data
+
+## Tradeoffs in cleaning decisions
+# Keep all rows
++ More data
+- More assumptions
+# Drop missing rows
++ No invented values
+- Less data
