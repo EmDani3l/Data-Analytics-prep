@@ -33,6 +33,13 @@ plt.show()
 
 # ================================================================
 
+df.groupby("Pclass")["Survived"].mean().plot(kind="bar")
+plt.title("Survival Rate by Class")
+plt.ylabel("Survival Rate")
+plt.show()
+
+# ================================================================
+
 numeric_df = df.select_dtypes(include=["number"])
 corr = numeric_df.corr()
 sns.heatmap(corr, annot=True)
