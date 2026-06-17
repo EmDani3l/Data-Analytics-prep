@@ -14,3 +14,4 @@ I don't really know what I am doing or how much I actually will need to know to 
 - Using plots to see trends visually instead of just numbers
 - EDA to answer simple observation questions
 - Statistics to read trends and answer questions regarding multiple variables
+- Data cleaning, data imputation
