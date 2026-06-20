@@ -18,3 +18,6 @@ I don't really know what I am doing or how much I actually will need to know to 
 - Basic text analysis using .lower, .contains, .sum, etc
 - Finding frequencies of words using iterations, dict, list, sort
 - Returning attributes of an item tuple
+
+20/6/2026:
+- ngrams to find frequency of multiple word sequences
