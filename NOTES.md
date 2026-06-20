@@ -274,3 +274,27 @@ One word at a time
 
 ## Bigrams
 Two words together
+
+# TF-IDF
+
+### get_feature_names_out()
+The vectorizer scanned all 8 comments and built a dictionary of unique words.
+So the vectorizer is creating a feature space.
+
+## TF-IDF assigns a weight to each word.
+Data Frame returns what words appear in each comment, but the weight of a word is reduced if it appears more frequently in more comments, as it would be perceived to be less helpful in distinguishing between documents. E.g. a word like "crashes" is more informative than "the".
+
+### vectorizer.fit_transform(comments)
+fit() --> Learn the vocabulary:
+app
+crashes
+customer
+service
+...
+
+transform() --> Convert text into vectors:
+"The app crashes"
+
+↓
+
+[0.48, 0.57, ...]
