@@ -21,3 +21,4 @@ I don't really know what I am doing or how much I actually will need to know to 
 
 20/6/2026:
 - ngrams to find frequency of multiple word sequences
+- Introduction to TF-IDF, which revolves around turning text into numerical vectors which are used for machine learning
