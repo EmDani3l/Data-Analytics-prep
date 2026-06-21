@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-df = pd.read_csv("datasets/IMDB Dataset.csv")
+df = pd.read_csv("datasets/IMDB_Dataset.csv")
 
 # print(df.head())
 # print()
