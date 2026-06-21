@@ -26,3 +26,6 @@ I don't really know what I am doing or how much I actually will need to know to 
 
 21/6/2026:
 - Text cleaning
+- Train and test sets to do prediction and measure accuracy
+- Classification report, Confusion matrix
+- Accuracy, Precision, Recall, F1 Score
