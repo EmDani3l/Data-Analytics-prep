@@ -306,3 +306,33 @@ transform() --> Convert text into vectors:
 ### text = re.sub(r"[^a-z\s]", " ", text)
 ### text = re.sub(r"\s+", " ", text)
 HTML removed, punctuation removed, everything lowercase
+
+### random_state = n --> n is just a random seed number
+
+## Confusion matrix
+### Rows
+Actual values
+### Columns
+Predicted values
+
+[[4321  640]
+ [ 477 4562]]
+
+                    Predicted Negative        Predicted Positive
+Actual Negative         4321                        640
+Actual Positive         477                         4562
+
+## Accuracy
+Correct predictions out of total reviews
+
+## Precision
+When the model predicts positive, it is correct what percent of the time?
+
+## Recall
+The model successfully found what percent of all positive reviews?
+
+## F1 Score
+Combines precision and recall into one number
+
+#### If your internship team wants to catch as many unhappy customers as possible, would you optimize for precision or recall, and why?
+Recall, so as to avoid missing unhappy feedback. False alarms are more manageable.
