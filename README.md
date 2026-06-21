@@ -23,3 +23,6 @@ I don't really know what I am doing or how much I actually will need to know to 
 - ngrams to find frequency of multiple word sequences
 - Introduction to TF-IDF, which revolves around turning text into numerical vectors which are used for machine learning
 - Separating out sample data into positive and negative
+
+21/6/2026:
+- Text cleaning
