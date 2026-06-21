@@ -298,3 +298,11 @@ transform() --> Convert text into vectors:
 ↓
 
 [0.48, 0.57, ...]
+
+# Text Cleaning
+
+### text = text.lower()
+### text = re.sub(r"<.*?>", " ", text)
+### text = re.sub(r"[^a-z\s]", " ", text)
+### text = re.sub(r"\s+", " ", text)
+HTML removed, punctuation removed, everything lowercase
